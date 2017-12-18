@@ -3,4 +3,9 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="background_theme_start_color">#f39b9005</color>
+    <color name="background_theme_end_color">#c8663002</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="white">#fff</color>
+    <color name="white_grey">#edeaea</color>
 </resources>

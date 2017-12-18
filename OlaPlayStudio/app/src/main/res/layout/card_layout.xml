@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="90dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:weightSum="10"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/song_play_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_margin="@dimen/small_margin"
+            android:contentDescription="@string/cover_image_description"
+            android:background="@drawable/afreen"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:weightSum="5"
+            android:layout_margin="@dimen/normal_margin"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/song_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:text="@string/album_name"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="normal"
+                android:textColor="@color/white"
+                android:gravity="bottom"/>
+            <TextView
+                android:id="@+id/song_artists"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:text="@string/artist_name"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="normal"
+                android:textColor="@color/white_grey"
+                android:maxLines="2"/>
+            <ProgressBar
+                android:id="@+id/download_progress"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true">
+            <ImageView
+                android:id="@+id/more_action_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/more_actions"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
